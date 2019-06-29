@@ -1,0 +1,85 @@
+ <!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="app.css"> <!-- from wp theme -->
+		<link rel="stylesheet" href="bundle.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- this should be localized -->
+	</head>
+	<body><!-- php body_class(); ? -->
+
+		<div class="background-dirty">
+			<div class="site-main" role="main">
+
+				<article class="page">
+
+					<div class="spine-border"></div>
+
+					<div class="article-header">
+						<h2 class="page-title">Contact </h2>
+					</div>
+
+					<div class="article-content">
+						<p>Send me a message to<br>
+							<a href="mailto:riley@rileybathust.com">riley@rileybathurst.com</a>
+						</p>
+
+						<!-- enctype='multipart/form-data' is key to submitting documents -->
+						<form action="<!-- php echo esc_url( admin_url('admin-post.php') ); ?> -->" enctype='multipart/form-data' method="post" class="article-form">
+
+							<input type="hidden" name="action" value="contact">
+							<input type="hidden" name="data" value="contactid"><!-- slightly different value to differentiate, not used -->
+
+							<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+								<i class="material-icons mdc-text-field__icon">person</i>
+								<input class="mdc-text-field__input">
+								<div class="mdc-notched-outline">
+									<div class="mdc-notched-outline__leading"></div>
+									<div class="mdc-notched-outline__notch">
+										<label class="mdc-floating-label">Name</label>
+									</div>
+									<div class="mdc-notched-outline__trailing"></div>
+								</div>
+							</div>
+
+							<br>
+
+							<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+								<i class="material-icons mdc-text-field__icon">email</i>
+								<input class="mdc-text-field__input">
+								<div class="mdc-notched-outline">
+									<div class="mdc-notched-outline__leading"></div>
+									<div class="mdc-notched-outline__notch">
+										<label class="mdc-floating-label">email</label>
+									</div>
+									<div class="mdc-notched-outline__trailing"></div>
+								</div>
+							</div>
+
+							<br>
+
+							<div class="mdc-text-field mdc-text-field--textarea">
+								<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+								<div class="mdc-notched-outline">
+									<div class="mdc-notched-outline__leading"></div>
+									<div class="mdc-notched-outline__notch">
+										<label for="textarea" class="mdc-floating-label">Enquiry</label>
+									</div>
+									<div class="mdc-notched-outline__trailing"></div>
+								</div>
+							</div>
+
+							<!-- recaptcha -->
+							<div class="g-recaptcha" data-sitekey="6LdE9aYUAAAAAEI0gH7nm-bZImKXUSnbzgHCchNU"></div>
+
+							<!-- send -->
+							<input type="submit" class="mdc-button mdc-button--raised">
+
+						</form>
+					</div>
+
+				</article>
+			</div>
+		</div>
+		<script src="bundle.js" async></script>
+	</body>
+</html>

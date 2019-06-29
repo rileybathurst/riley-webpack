@@ -1,0 +1,22 @@
+$mdc-theme-primary: #c22127; // this works
+
+@import "@material/textfield/mdc-text-field";
+@import "@material/textfield/icon/mdc-text-field-icon";
+@import "@material/button/mdc-button";
+
+ .mdc-text-field {
+	// display: block; // foundation override
+	margin-bottom: 1em;
+}
+
+.mdc-text-field--textarea {
+	padding-top: 0.1em; // hack to fix an overlap but breaks other things
+}
+
+.article-form label { // hack to fix foundation
+	clip: auto;
+	height: initial;
+	position: relative!important;
+	width: initial;
+}
+
