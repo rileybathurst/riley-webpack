@@ -12,3 +12,5 @@ textFieldElements.forEach((textFieldEl) => {
 
 const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field-icon'));
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+
+import Prism from 'prismjs';

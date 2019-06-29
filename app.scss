@@ -1,22 +1,35 @@
-$mdc-theme-primary: #c22127; // this works
+// Slightly insane thing to do
+// @import '../../riley/wp-content/themes/riley/scss/app.scss'; // I think this is finiding it but it's not right
+
+$primary-color: #c22127;
+$secondary-color: #8a0000;
+
+$white: #fefefe;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+
+$mdc-theme-primary: $primary-color;
 
 @import "@material/textfield/mdc-text-field";
 @import "@material/textfield/icon/mdc-text-field-icon";
 @import "@material/button/mdc-button";
 
  .mdc-text-field {
-	// display: block; // foundation override
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .mdc-text-field--textarea {
-	padding-top: 0.1em; // hack to fix an overlap but breaks other things
+  padding-top: 0.1em; // hack to fix an overlap but breaks other things
 }
 
 .article-form label { // hack to fix foundation
-	clip: auto;
-	height: initial;
-	position: relative!important;
-	width: initial;
+  clip: auto;
+  height: initial;
+  position: relative!important;
+  width: initial;
 }
 
+// Prism
+@import "prism";
