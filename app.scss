@@ -1,5 +1,6 @@
-// Slightly insane thing to do
-// @import '../../riley/wp-content/themes/riley/scss/app.scss'; // I think this is finiding it but it's not right
+/* Slightly insane thing to do
+@import '../../riley/wp-content/themes/riley/scss/app.scss'; // I think this is finiding it but it's not right
+*/
 
 $primary-color: #c22127;
 $secondary-color: #8a0000;
@@ -12,9 +13,9 @@ $black: #0a0a0a;
 
 $mdc-theme-primary: $primary-color;
 
-@import "@material/textfield/mdc-text-field";
+/* @import "@material/textfield/mdc-text-field";
 @import "@material/textfield/icon/mdc-text-field-icon";
-@import "@material/button/mdc-button";
+@import "@material/button/mdc-button"; */
 
  .mdc-text-field {
   margin-bottom: 1em;
