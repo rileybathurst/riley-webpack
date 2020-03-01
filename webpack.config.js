@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -30,7 +30,19 @@ module.exports = {
             options: {
               includePaths: ['./node_modules']
             }
-          }
+          },
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: [
+                  '@babel/preset-env'
+                ]
+              }
+            }
+          },
         ]
       }
     ]

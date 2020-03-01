@@ -1,5 +1,5 @@
 import _ from 'lodash';
-
+/* 
 import {MDCTextField} from '@material/textfield';
 import {MDCTextFieldIcon} from '@material/textfield/icon';
 
@@ -12,5 +12,9 @@ textFieldElements.forEach((textFieldEl) => {
 
 const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field-icon'));
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+ */
+// import Prism from 'prismjs';
 
-import Prism from 'prismjs';
+import lozad from 'lozad'
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
