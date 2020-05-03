@@ -16,7 +16,8 @@ const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
  // --------------------------------- //
 
-const Prism = require('prismjs');
+// const Prism = require('prismjs');
+// Im going to do this custom at the moment but it's something interesting to think about again down the road
 
 // --------------------------------- //
 
