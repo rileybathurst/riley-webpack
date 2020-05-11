@@ -36,11 +36,109 @@ $mdc-theme-primary: $primary-color;
 // Prism
 // @import "prism";
 
+/* 
+I moved away from this idea
 .img-hover-test,
 .img-hover-test img {
-  max-width: 100%;
+  max-width: 33%;
+} */
+
+
+#snap-scroll-container-coordinates {
+  width: 100%;
+  // width: 20%; // just as a test
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+
+  -webkit-scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+
+  -scroll-snap-destination: 50% 50%;
+  -webkit-scroll-snap-destination: 50% 50%;
+
+  -webkit-overflow-scrolling: touch;
 }
 
-body {
-  background: peachpuff;
+.child {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #F0F0F0;
+  display: inline-block;
+
+  scroll-snap-align: center;
+  scroll-snap-coordinate: 50% 50%;
+  -webkit-scroll-snap-coordinate: 50% 50%;
+}
+
+.child img {
+  width: 100%;
+  vertical-align: middle; // maybe I should do something better for images of a different height but for now this works
+}
+
+#thumbnails img {
+  width: 33%;
+}
+
+#gallery {
+  display: grid;
+
+  #snap-scroll-container-coordinates,
+  #left,
+  #right {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+/* 
+this doesnt work as i cant have the arrows on the top and scroll the bottom
+#controls {
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 80% 1fr;
+  align-items: center;
+
+  #left,
+  #right {
+    padding: 2rem;
+    font-size: 6rem;
+    color: yellow;
+  }
+
+  #right {
+    grid-column: 3;
+    justify-self: end;
+  }
+} */
+
+#left,
+#right {
+  z-index: 1;
+  align-self: center;
+  font-size: 6rem;
+}
+
+#left {
+  justify-self: left; // make these as small as possible as if your over the the scroll behind doesnt work
+  padding-left: 1rem;
+}
+
+#right {
+  justify-self: right;
+  padding-right: 1rem;
+}
+
+#left a,
+#right a {
+  text-decoration: none;
+  color: yellow;
+}
+
+
+html {
+  scroll-behavior: smooth; // im not 100% sure this is doing what I want with the sideways but its helping for the vertical
 }

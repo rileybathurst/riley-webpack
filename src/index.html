@@ -11,19 +11,16 @@
 
 				<article class="page">
 
-					<div class="spine-border"></div>
+<!-- 					<div class="spine-border"></div>
 
 					<div class="article-header">
 						<h2 class="page-title">Contact </h2>
-					</div>
+					</div> -->
 
 					<div class="article-content">
 						<!-- <p>Send me a message to<br>
 							<a href="mailto:riley@rileybathust.com">riley@rileybathurst.com</a>
 						</p> -->
-
-						hey ccc
-						
 
 						<!-- enctype='multipart/form-data' is key to submitting documents -->
 						<!-- <form action="" enctype='multipart/form-data' method="post" class="article-form">
@@ -82,20 +79,61 @@
 
 				</article>
 
-
-				<iframe data-src="https://player.vimeo.com/video/195047862?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="lozad" data-index="1"></iframe>
+				<!-- I think I was using this to test lozad -->
+				<!-- <iframe data-src="https://player.vimeo.com/video/195047862?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="lozad" data-index="1"></iframe> -->
 				
 				<hr>
 
+				<!-- prism testing, so yeah thats not going well -->
+				<!-- <pre><code class="language-css">p { color: red }</code></pre> -->
 
-				<pre><code class="language-css">p { color: red }</code></pre>
 
-
+<!-- 				This is too jerky going back to the triptych I had made earlier
 				<section class="img-hover-test">
-					<img src="/img/IMG_0126.jpg" />
-					<img src="/img/IMG_3238-large.jpg" /> 
+					!-- I want to hover over the bottom images and have them show larger where the top image is --
+					!-- top image --
+					<div id="hero">
+							<img id="starter" src="/img/IMG_0049-full.jpg" />
+					</div>
+					<hr >
+					!-- bottom hover over images should go to the top --
+					<img id="thumb1" src="/img/IMG_0126.jpg" />
+					<img id="thumb2" src="/img/IMG_3238-large.jpg" /> 
+				</section> -->
 
+				<div id="gallery">
+
+					<section id="snap-scroll-container-coordinates">
+						<div class="child" id="first">
+							<h1>1</h1>
+							<img src="/img/IMG_0049-full.jpg">
+						</div>
+						<div class="child" id="target">
+							<h1>2</h1>
+							<img src="/img/IMG_0126.jpg">
+						</div>
+						<div class="child">
+							<h1>3</h1>
+							<img src="/img/IMG_3238-large.jpg">
+						</div>
+						
+					</section>
+
+					<!-- <div id="controls"> -->
+						<div id="left"><a href="#">&lsaquo;</a></div>
+						<div id="right"><a href="#">&rsaquo;</a></div>
+					<!-- </div> -->
+
+				</div> <!-- #gallery -->
+
+				<hr />
+
+				<section id="thumbnails">
+					<a href="#"><img id="th1" src="/img/IMG_0049-full.jpg"></a>
+					<a href="#"><img id="th2" src="/img/IMG_0126.jpg"></a>
+					<a href="#"><img id="th3" src="/img/IMG_3238-large.jpg"></a>
 				</section>
+
 
 			</div><!-- .site-main -->
 		</div>
