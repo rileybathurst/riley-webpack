@@ -1,9 +1,8 @@
- <!doctype html>
+<!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="app.css"> <!-- from wp theme -->
 		<link rel="stylesheet" href="bundle.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- this should be localized -->
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> this should be localized -->
 	</head>
 	<body><!-- php body_class(); ? -->
 
@@ -19,15 +18,19 @@
 					</div>
 
 					<div class="article-content">
-						<p>Send me a message to<br>
+						<!-- <p>Send me a message to<br>
 							<a href="mailto:riley@rileybathust.com">riley@rileybathurst.com</a>
-						</p>
+						</p> -->
+
+						hey ccc
+						
 
 						<!-- enctype='multipart/form-data' is key to submitting documents -->
-						<form action="<!-- php echo esc_url( admin_url('admin-post.php') ); ?> -->" enctype='multipart/form-data' method="post" class="article-form">
+						<!-- <form action="" enctype='multipart/form-data' method="post" class="article-form">
 
 							<input type="hidden" name="action" value="contact">
-							<input type="hidden" name="data" value="contactid"><!-- slightly different value to differentiate, not used -->
+							<input type="hidden" name="data" value="contactid">
+							!-- slightly different value to differentiate, not used 
 
 							<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
 								<i class="material-icons mdc-text-field__icon">person</i>
@@ -62,23 +65,39 @@
 								<div class="mdc-notched-outline">
 									<div class="mdc-notched-outline__leading"></div>
 									<div class="mdc-notched-outline__notch">
-										<label for="textarea" class="mdc-floating-label">Enquiry</label>
+										<label for="textarea" class="mdc-floating-label">Textarea Label</label>
 									</div>
 									<div class="mdc-notched-outline__trailing"></div>
 								</div>
 							</div>
 
-							<!-- recaptcha -->
+							!-- recaptcha 
 							<div class="g-recaptcha" data-sitekey="6LdE9aYUAAAAAEI0gH7nm-bZImKXUSnbzgHCchNU"></div>
 
-							<!-- send -->
+							!-- send 
 							<input type="submit" class="mdc-button mdc-button--raised">
 
-						</form>
+						</form> -->
 					</div>
 
 				</article>
-			</div>
+
+
+				<iframe data-src="https://player.vimeo.com/video/195047862?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="lozad" data-index="1"></iframe>
+				
+				<hr>
+
+
+				<pre><code class="language-css">p { color: red }</code></pre>
+
+
+				<section class="img-hover-test">
+					<img src="/img/IMG_0126.jpg" />
+					<img src="/img/IMG_3238-large.jpg" /> 
+
+				</section>
+
+			</div><!-- .site-main -->
 		</div>
 		<script src="bundle.js" async></script>
 	</body>

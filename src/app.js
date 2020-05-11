@@ -21,6 +21,15 @@ const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
 // --------------------------------- //
 
-import lozad from 'lozad'
+import lozad from 'lozad';
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
+
+// import html from './index.html'; // this was killing webpack
+// but its documented here https://webpack.js.org/loaders/html-loader/#root
+// so I need to get the html loader working some other 
+
+// import txt from 'raw-loader!./index.html';
+// require('./index.html');
+// require('./contact.html');
+// require('./prism.html');

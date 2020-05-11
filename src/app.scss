@@ -11,6 +11,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 
+// Im going to get rid of all the mdc I can design what I need and just implement little pieces here and there
 $mdc-theme-primary: $primary-color;
 
 /* @import "@material/textfield/mdc-text-field";
@@ -33,4 +34,13 @@ $mdc-theme-primary: $primary-color;
 }
 
 // Prism
-@import "prism";
+// @import "prism";
+
+.img-hover-test,
+.img-hover-test img {
+  max-width: 100%;
+}
+
+body {
+  background: peachpuff;
+}

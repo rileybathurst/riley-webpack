@@ -1,6 +1,6 @@
 {
   "name": "riley-webpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "private": true,
   "scripts": {
@@ -12,12 +12,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
-    "node-sass": "^4.13.1",
+    "extract-loader": "^5.0.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "install": "^0.13.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.5",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.1",
     "sass-loader": "^8.0.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "lozad": "^1.14.0",
