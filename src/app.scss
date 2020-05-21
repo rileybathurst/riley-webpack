@@ -142,3 +142,74 @@ this doesnt work as i cant have the arrows on the top and scroll the bottom
 html {
   scroll-behavior: smooth; // im not 100% sure this is doing what I want with the sideways but its helping for the vertical
 }
+
+
+// https://codepen.io/rm/pen/ldhon
+nav#horizontal {
+  font-size: 2rem;
+
+  ul {
+    // display: flex;
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    width: 33%; // this and the rest might be able to be done with js but for now its fine
+  }
+
+  li:first-child:hover ~ hr {
+    margin-left: 0;
+  }
+
+  li:nth-child(2):hover ~ hr {
+    margin-left: 33%;
+  }
+
+  li:nth-child(3):hover ~ hr {
+    margin-left: 66%;
+  }
+
+  hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    margin-left: -33%; // hide when its not in use
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+  }
+}
+
+nav#vertical {
+  font-size: 2rem;
+  line-height: 2rem;
+
+  li:first-child:hover ~ hr {
+    margin-top: -4rem; // weird backwards math
+    opacity: 1;
+  }
+
+  li:nth-child(2):hover ~ hr {
+    margin-top: -2rem;
+    opacity: 1;
+  }
+
+  li:nth-child(3):hover ~ hr {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  hr {
+    position: absolute; // without this it does a freakout dance on hover
+    height: .25rem;
+    width: 100%; // needs a width
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+    z-index: -1; // slide behind and dont get in the way of the hover
+    // margin-top: 2rem; // start at the bottom
+    margin-top: -6rem; // start at the top makes more sense as thats where people come from
+    opacity: 0;
+  }
+}

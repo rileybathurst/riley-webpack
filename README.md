@@ -6,4 +6,4 @@ Building blocks for [riley](https://github.com/rileybathurst/riley)
 
 ```% npm start```
 
-```% npm build```
+```% npm run build```

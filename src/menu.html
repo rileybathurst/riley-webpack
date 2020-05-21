@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="bundle.css">
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> this should be localized -->
+	</head>
+	<body><!-- php body_class(); ? -->
+
+        <nav id="horizontal">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <hr> <!-- this has to be in the same parent element for the ~ selector but breaks a flex layout as that makes it want to be in the same line -->
+            </ul>
+        </nav>
+        
+        <nav id="vertical">
+            <ul>
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+                <hr> <!-- this has to be in the same parent element for the ~ selector but breaks a flex layout as that makes it want to be in the same line -->
+            </ul>
+        </nav>
+		<script src="bundle.js" async></script>
+	</body>
+</html>
