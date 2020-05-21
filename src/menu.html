@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="bundle.css">
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> this should be localized -->
-	</head>
-	<body><!-- php body_class(); ? -->
+    <head>
+        <link rel="stylesheet" href="bundle.css">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> this should be localized -->
+    </head>
+    <body><!-- php body_class(); ? -->
 
         <nav id="horizontal">
             <ul>
@@ -23,6 +23,18 @@
                 <hr> <!-- this has to be in the same parent element for the ~ selector but breaks a flex layout as that makes it want to be in the same line -->
             </ul>
         </nav>
-		<script src="bundle.js" async></script>
-	</body>
+
+        <p>Wordpress doesnt let you add an hr to a menu so I'll do it with JS</p>
+        <nav class="navigation-top">
+            <div class="menu-top-nav-container">
+                <ul id="top-menu" class="menu">
+                    <li id="menu-item-3793" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3793"><a href="http://localhost:8001/category/clicks/">Clicks</a></li>
+                    <li id="menu-item-3854" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3854"><a href="http://localhost:8001/category/code/">Code</a></li>
+                    <li id="menu-item-3868" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3868"><a href="http://localhost:8001/category/camera/">Camera</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <script src="bundle.js" async></script>
+    </body>
 </html>

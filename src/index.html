@@ -1,142 +1,117 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="bundle.css">
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> this should be localized -->
-	</head>
-	<body><!-- php body_class(); ? -->
+    <head>
+        <link rel="stylesheet" href="bundle.css">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> this should be localized -->
+    </head>
+    <body><!-- php body_class(); ? -->
 
-		<div class="background-dirty">
-			<div class="site-main" role="main">
+        <nav>
+            <ul>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/spine.html">Spine</a></li>
+            </ul>
+        </nav>
 
-				<article class="page">
+        <div class="background-dirty">
+            <div class="site-main" role="main">
 
-<!-- 					<div class="spine-border"></div>
+                <article class="page">
 
-					<div class="article-header">
-						<h2 class="page-title">Contact </h2>
-					</div> -->
+                    <div class="spine-border"><!-- stay gold --></div>
 
-					<div class="article-content">
-						<!-- <p>Send me a message to<br>
-							<a href="mailto:riley@rileybathust.com">riley@rileybathurst.com</a>
-						</p> -->
+                    <div class="article-header">
+                        <h2 class="page-title">Contact </h2>
+                    </div>
 
-						<!-- enctype='multipart/form-data' is key to submitting documents -->
-						<!-- <form action="" enctype='multipart/form-data' method="post" class="article-form">
+                    <div class="article-content">
+                        <!-- <p>Send me a message to<br>
+                            <a href="mailto:riley@rileybathust.com">riley@rileybathurst.com</a>
+                        </p> -->
 
-							<input type="hidden" name="action" value="contact">
-							<input type="hidden" name="data" value="contactid">
-							!-- slightly different value to differentiate, not used 
+                        <!-- enctype='multipart/form-data' is key to submitting documents -->
+                        <!-- <form action="" enctype='multipart/form-data' method="post" class="article-form">
 
-							<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
-								<i class="material-icons mdc-text-field__icon">person</i>
-								<input class="mdc-text-field__input">
-								<div class="mdc-notched-outline">
-									<div class="mdc-notched-outline__leading"></div>
-									<div class="mdc-notched-outline__notch">
-										<label class="mdc-floating-label">Name</label>
-									</div>
-									<div class="mdc-notched-outline__trailing"></div>
-								</div>
-							</div>
+                            <input type="hidden" name="action" value="contact">
+                            <input type="hidden" name="data" value="contactid">
+                            !-- slightly different value to differentiate, not used 
 
-							<br>
+                            <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+                                <i class="material-icons mdc-text-field__icon">person</i>
+                                <input class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label class="mdc-floating-label">Name</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
 
-							<div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
-								<i class="material-icons mdc-text-field__icon">email</i>
-								<input class="mdc-text-field__input">
-								<div class="mdc-notched-outline">
-									<div class="mdc-notched-outline__leading"></div>
-									<div class="mdc-notched-outline__notch">
-										<label class="mdc-floating-label">email</label>
-									</div>
-									<div class="mdc-notched-outline__trailing"></div>
-								</div>
-							</div>
+                            <br>
 
-							<br>
+                            <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+                                <i class="material-icons mdc-text-field__icon">email</i>
+                                <input class="mdc-text-field__input">
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label class="mdc-floating-label">email</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
 
-							<div class="mdc-text-field mdc-text-field--textarea">
-								<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
-								<div class="mdc-notched-outline">
-									<div class="mdc-notched-outline__leading"></div>
-									<div class="mdc-notched-outline__notch">
-										<label for="textarea" class="mdc-floating-label">Textarea Label</label>
-									</div>
-									<div class="mdc-notched-outline__trailing"></div>
-								</div>
-							</div>
+                            <br>
 
-							!-- recaptcha 
-							<div class="g-recaptcha" data-sitekey="6LdE9aYUAAAAAEI0gH7nm-bZImKXUSnbzgHCchNU"></div>
+                            <div class="mdc-text-field mdc-text-field--textarea">
+                                <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                                <div class="mdc-notched-outline">
+                                    <div class="mdc-notched-outline__leading"></div>
+                                    <div class="mdc-notched-outline__notch">
+                                        <label for="textarea" class="mdc-floating-label">Textarea Label</label>
+                                    </div>
+                                    <div class="mdc-notched-outline__trailing"></div>
+                                </div>
+                            </div>
 
-							!-- send 
-							<input type="submit" class="mdc-button mdc-button--raised">
+                            !-- recaptcha 
+                            <div class="g-recaptcha" data-sitekey="6LdE9aYUAAAAAEI0gH7nm-bZImKXUSnbzgHCchNU"></div>
 
-						</form> -->
-					</div>
+                            !-- send 
+                            <input type="submit" class="mdc-button mdc-button--raised">
 
-				</article>
+                        </form> -->
+                    </div>
 
-				<!-- I think I was using this to test lozad -->
-				<!-- <iframe data-src="https://player.vimeo.com/video/195047862?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="lozad" data-index="1"></iframe> -->
-				
-				<hr>
+                </article>
 
-				<!-- prism testing, so yeah thats not going well -->
-				<!-- <pre><code class="language-css">p { color: red }</code></pre> -->
+                <!-- I think I was using this to test lozad -->
+                <!-- <iframe data-src="https://player.vimeo.com/video/195047862?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="lozad" data-index="1"></iframe> -->
+                
+                <hr>
+
+                <!-- prism testing, so yeah thats not going well -->
+                <!-- <pre><code class="language-css">p { color: red }</code></pre> -->
 
 
 <!-- 				This is too jerky going back to the triptych I had made earlier
-				<section class="img-hover-test">
-					!-- I want to hover over the bottom images and have them show larger where the top image is --
-					!-- top image --
-					<div id="hero">
-							<img id="starter" src="/img/IMG_0049-full.jpg" />
-					</div>
-					<hr >
-					!-- bottom hover over images should go to the top --
-					<img id="thumb1" src="/img/IMG_0126.jpg" />
-					<img id="thumb2" src="/img/IMG_3238-large.jpg" /> 
-				</section> -->
-
-				<div id="gallery">
-
-					<section id="snap-scroll-container-coordinates">
-						<div class="child" id="first">
-							<h1>1</h1>
-							<img src="/img/IMG_0049-full.jpg">
-						</div>
-						<div class="child" id="target">
-							<h1>2</h1>
-							<img src="/img/IMG_0126.jpg">
-						</div>
-						<div class="child">
-							<h1>3</h1>
-							<img src="/img/IMG_3238-large.jpg">
-						</div>
-						
-					</section>
-
-					<!-- <div id="controls"> -->
-						<div id="left"><a href="#">&lsaquo;</a></div>
-						<div id="right"><a href="#">&rsaquo;</a></div>
-					<!-- </div> -->
-
-				</div> <!-- #gallery -->
-
-				<hr />
-
-				<section id="thumbnails">
-					<a href="#"><img id="th1" src="/img/IMG_0049-full.jpg"></a>
-					<a href="#"><img id="th2" src="/img/IMG_0126.jpg"></a>
-					<a href="#"><img id="th3" src="/img/IMG_3238-large.jpg"></a>
-				</section>
+                <section class="img-hover-test">
+                    !-- I want to hover over the bottom images and have them show larger where the top image is --
+                    !-- top image --
+                    <div id="hero">
+                            <img id="starter" src="/img/IMG_0049-full.jpg" />
+                    </div>
+                    <hr >
+                    !-- bottom hover over images should go to the top --
+                    <img id="thumb1" src="/img/IMG_0126.jpg" />
+                    <img id="thumb2" src="/img/IMG_3238-large.jpg" /> 
+                </section> -->
 
 
-			</div><!-- .site-main -->
-		</div>
-		<script src="bundle.js" async></script>
-	</body>
+            </div><!-- .site-main -->
+        </div>
+        <script src="bundle.js" async></script>
+    </body>
 </html>
