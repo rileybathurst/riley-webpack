@@ -10,3 +10,5 @@ This needs a bunch of work to make everything work but also be all split up.
 ```% npm start```
 
 ```% npm run build```
+
+- https://github.com/PatrickJS/starter/issues/727
